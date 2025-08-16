@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-6 text-center">Register Form</h2>
+
+      <form id="form">
+        <!-- Name -->
+        <div class="mb-4">
+          <label class="block font-medium mb-1">Name</label>
+          <input
+            type="text"
+            placeholder="Enter Name"
+            class="w-full border p-2 rounded" name="name"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="block font-medium mb-1">Email</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            class="w-full border p-2 rounded" name="email"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-4">
+          <label class="block font-medium mb-1">Password</label>
+          <input
+            type="password" name="password"
+            placeholder="Enter Password"
+            class="w-full border p-2 rounded"
+          />
+        </div>
+
+        <!-- Country -->
+        <div class="mb-6">
+          <label class="block font-medium mb-1">Select Your Country</label>
+          <select class="w-full border p-2 rounded" name="select">
+            <option value="">-- Select Country --</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
